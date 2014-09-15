@@ -1,0 +1,11 @@
+SETLOCAL
+set INCLUDE=D:\toolkt21\C\OS2H;D:\ibmcpp\INCLUDE;D:\ibmcpp\ibmclass;d:\vptoolkt
+set LIB=D:\toolkt21\OS2LIB;D:\ibmcpp\LIB;D:\VPTOOLKT
+set IPFC=D:\toolkt21\IPFC
+set PATH=D:\toolkt21\OS2BIN;D:\ibmcpp\BIN
+set SCPATH=D:\toolkt21\SC;D:\VPTOOLKT
+set SMEMIT=H;IH;PH;SC;
+set SMTMP=C:\TMP
+set SMINCLUDE=.;D:\toolkt21\SC;D:\VPTOOLKT
+set SOMLIBS = DDE4NBS + OS2386 + SOM
+

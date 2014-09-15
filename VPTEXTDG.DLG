@@ -1,0 +1,40 @@
+DLGINCLUDE 1 "D:\ctrlsamp\VPTEXTdg.h"
+
+DLGTEMPLATE ID_TEXTDLG LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "", ID_TEXTDLG, 12, 6, 254, 129, NOT FS_DLGBORDER | WS_VISIBLE
+    BEGIN
+        GROUPBOX        "Basic", -1, 9, 74, 214, 20
+                        PRESPARAMS PP_FONTNAMESIZE, "10.Helv"
+        AUTOCHECKBOX    "~Tab stop", ID_TABSTOP, 17, 76, 51, 10, WS_GROUP
+                        PRESPARAMS PP_FONTNAMESIZE, "10.Helv"
+        AUTOCHECKBOX    "~Group", ID_GROUP, 74, 76, 40, 10, NOT WS_TABSTOP
+                        PRESPARAMS PP_FONTNAMESIZE, "10.Helv"
+        AUTOCHECKBOX    "~Disabled", ID_DISABLED, 120, 76, 51, 10, NOT 
+                        WS_TABSTOP
+                        PRESPARAMS PP_FONTNAMESIZE, "10.Helv"
+        AUTOCHECKBOX    "~Visible", ID_VISIBLE, 177, 76, 43, 10, NOT 
+                        WS_TABSTOP
+                        PRESPARAMS PP_FONTNAMESIZE, "10.Helv"
+        PUSHBUTTON      "~Reset", 102, 2, 2, 40, 14, WS_GROUP
+                        PRESPARAMS PP_FONTNAMESIZE, "10.Helv"
+        PUSHBUTTON      "Help", 1002, 52, 2, 40, 14, BS_HELP | WS_GROUP
+                        PRESPARAMS PP_FONTNAMESIZE, "10.Helv"
+        LTEXT           "Text Sample Style", -1, 79, 96, 86, 8
+                        PRESPARAMS PP_FONTNAMESIZE, "10.Helv"
+        LTEXT           "Gradient", -1, 8, 51, 36, 8
+                        PRESPARAMS PP_FONTNAMESIZE, "10.Helv"
+        LTEXT           "Horizontal", -1, 31, 41, 43, 8
+                        PRESPARAMS PP_FONTNAMESIZE, "10.Helv"
+        LTEXT           "Vertical", -1, 31, 31, 36, 8
+                        PRESPARAMS PP_FONTNAMESIZE, "10.Helv"
+        CONTROL         "", ID_HORZSB, 85, 41, 48, 12, WC_SPINBUTTON, 
+                        SPBS_ALLCHARACTERS | SPBS_NUMERICONLY | SPBS_MASTER | 
+                        SPBS_SERVANT | SPBS_JUSTDEFAULT | WS_GROUP | 
+                        WS_TABSTOP | WS_VISIBLE
+        CONTROL         "", ID_VERTSB, 85, 28, 48, 12, WC_SPINBUTTON, 
+                        SPBS_ALLCHARACTERS | SPBS_NUMERICONLY | SPBS_MASTER | 
+                        SPBS_SERVANT | SPBS_JUSTDEFAULT | WS_GROUP | 
+                        WS_TABSTOP | WS_VISIBLE
+    END
+END

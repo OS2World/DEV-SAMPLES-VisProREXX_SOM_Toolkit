@@ -1,0 +1,14 @@
+#define INCL_WIN
+#define INCL_WINWORKPLACE
+#define  INCL_WINSTDSPIN
+#include <os2.h>
+
+#include "vpdial.h"
+
+POINTER  ID_POINTER       VPdial.PTR
+POINTER  ID_ENTERPTR      enter.ptr
+POINTER  ID_CHANGEDPTR    changed.ptr
+POINTER  ID_TRACKINGPTR   timer.ptr
+rcinclude vpdialdg.dlg
+
+

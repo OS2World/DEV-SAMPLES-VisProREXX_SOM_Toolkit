@@ -1,0 +1,15 @@
+#define ID_TEXTDLG                  100
+#define ID_RESET                    101
+#define ID_DISABLED                 103
+#define ID_VISIBLE                  104
+#define ID_GROUP                    105
+#define ID_TABSTOP                  106
+#define ID_NUMERICRB                107
+#define ID_UPPERCASERB              108
+#define ID_DATERB                   109
+#define ID_TIMERB                   110
+#define ID_CURRENCYRB               111
+#define ID_PICTURERB                112
+#define ID_PICTUREEF                113
+#define ID_HORZSB                   114
+#define ID_VERTSB                   115

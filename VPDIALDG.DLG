@@ -1,0 +1,37 @@
+DLGINCLUDE 1 "vpdialdg.h"
+
+DLGTEMPLATE ID_DIALDLG LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Dialog Title", 100, 12, 6, 254, 129, NOT FS_DLGBORDER |
+            WS_VISIBLE
+    BEGIN
+        GROUPBOX        "Basic", -1, 9, 74, 214, 20
+                        PRESPARAMS PP_FONTNAMESIZE, "10.Helv"
+        AUTOCHECKBOX    "~Tab stop", ID_TABSTOP, 17, 76, 51, 10, WS_GROUP
+                        PRESPARAMS PP_FONTNAMESIZE, "10.Helv"
+        AUTOCHECKBOX    "~Group", ID_GROUP, 74, 76, 40, 10, NOT WS_TABSTOP
+                        PRESPARAMS PP_FONTNAMESIZE, "10.Helv"
+        AUTOCHECKBOX    "~Disabled", ID_DISABLED, 120, 76, 51, 10, NOT
+                        WS_TABSTOP
+                        PRESPARAMS PP_FONTNAMESIZE, "10.Helv"
+        AUTOCHECKBOX    "~Visible", ID_VISIBLE, 177, 76, 43, 10, NOT
+                        WS_TABSTOP
+                        PRESPARAMS PP_FONTNAMESIZE, "10.Helv"
+        PUSHBUTTON      "~Reset", 102, 2, 2, 40, 14, WS_GROUP
+                        PRESPARAMS PP_FONTNAMESIZE, "10.Helv"
+        PUSHBUTTON      "Help", 1002, 53, 2, 40, 14, BS_HELP | WS_GROUP
+                        PRESPARAMS PP_FONTNAMESIZE, "10.Helv"
+        LTEXT           "Circular Slider Style", -1, 79, 96, 86, 8
+                        PRESPARAMS PP_FONTNAMESIZE, "10.Helv"
+        AUTOCHECKBOX    "~Midpoint", ID_MIDPOINT, 28, 58, 49, 10
+        AUTOCHECKBOX    "Exclude ~buttons", ID_NOBUTTON, 28, 48, 79, 10
+        AUTOCHECKBOX    "Exclude ~number", ID_NONUMBER, 28, 38, 79, 10
+        AUTOCHECKBOX    "~Exclude text", ID_NOTEXT, 28, 28, 65, 10
+        AUTOCHECKBOX    "D~irect manipulation", ID_POINTSELECT, 122, 55, 96,
+                        10
+        AUTOCHECKBOX    "~Proportional ticks", ID_PROPORTIONALTICKS, 122, 45,
+                        105, 10
+        AUTOCHECKBOX    "~360 degrees", ID_360, 122, 35, 65, 10
+    END
+END
+

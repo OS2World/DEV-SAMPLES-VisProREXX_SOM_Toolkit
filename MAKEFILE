@@ -1,0 +1,23 @@
+
+.SUFFIXES: .rc .res .ipf .inf .hlp .csc .sc .h .ih .ph .psc
+
+#
+# Compiler/tools Macros
+#
+SOMLIBS = DDE4NBS + OS2386 + SOM
+CLOCALFLAGS= /Ge-
+LLOCALFLAGS= /noi
+SOMTEMP = .\somtemp
+CFLAGS=/c+ /Gd-e+m+s- /Ses+ /Q+ /Ms /Kb+c+e+o-r+ /W2 /DNODEBUG /O+
+LFLAGS=/NOI /NOE /NOD /A:16 /MAP:full /NOLOGO /EXEPACK /BASE:0x10000
+LINK=LINK386  $(LFLAGS)
+RC_FLAGS=-r
+
+.rc.res:
+    rc $(RC_FLAGS) $< $@
+.csc.ih:
+        sc $*
+.def.lib:
+    implib $@ $<
+
+

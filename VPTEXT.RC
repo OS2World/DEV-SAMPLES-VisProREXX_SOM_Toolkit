@@ -1,0 +1,14 @@
+#define INCL_WIN
+#define INCL_WINWORKPLACE
+#define  INCL_WINSTDSPIN
+#include <os2.h>
+
+#include "VPText.h"
+
+POINTER  ID_POINTER       vptext.PTR
+POINTER  ID_ENTERPTR      enter.ptr
+POINTER  ID_CHANGEDPTR    changed.ptr
+POINTER  ID_EXITPTR   exit.ptr
+rcinclude VPTextdg.dlg
+
+
